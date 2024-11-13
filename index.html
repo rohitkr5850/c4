@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <input type="text" id="movie-input" placeholder="Enter movie title...">
+        <button onclick="searchMovies()">Search</button>
+        <div id="error-message"></div>
+        <div id="movies-container"></div>
+        <div class="pagination">
+            <button onclick="prevPage()" id="prev-btn" disabled>Previous</button>
+            <span id="page-info"></span>
+            <button onclick="nextPage()" id="next-btn" disabled>Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
